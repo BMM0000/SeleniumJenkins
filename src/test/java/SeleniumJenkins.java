@@ -49,8 +49,10 @@ public class SeleniumJenkins {
         loginButton.click();
 
         // Print success or failure
+        System.out.println("Before checking success message");
         WebElement successMessage = driver.findElement(By.cssSelector(".flash.success"));
         System.out.println("Login Successful: " + successMessage.isDisplayed());
+        System.out.println("After checking success message");
 
         driver.quit();
     }
