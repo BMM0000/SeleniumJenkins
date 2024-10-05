@@ -12,7 +12,7 @@ public class SeleniumJenkins {
 
     public static WebDriver driver;
 
-    @BeforeTest
+    @Test
     public void navigateToUrl(){
 
         System.setProperty("webdriver.chrome.driver","C:\\Users\\D.S.Mistry\\IdeaProjects\\SeleniumWithJenkins\\src\\main\\resources\\chromedriver.exe");
