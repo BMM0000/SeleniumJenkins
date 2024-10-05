@@ -10,10 +10,13 @@ import org.testng.annotations.Test;
 
 import java.time.Duration;
 import java.util.concurrent.TimeUnit;
+import java.util.logging.Logger;
 
 public class SeleniumJenkins {
 
     public static WebDriver driver;
+    private static final Logger logger = Logger.getLogger(SeleniumJenkins.class.getName());
+
 
     @BeforeMethod
     public void launchDriver(){
@@ -28,17 +31,19 @@ public class SeleniumJenkins {
     @Test
     public void Test1(){
         driver.get("https://automationtalks.com/");
-        System.out.println("Test1 title is" + driver.getTitle());
+        logger.info("Test1 title is" + driver.getTitle());
     }
 
     @Test
     public void Test2(){
         driver.get("https://automationtalks.com/");
+        logger.info("Test2 title is" + driver.getTitle());
     }
 
     @Test
     public void Test3(){
         driver.get("https://automationtalks.com/");
+        logger.info("Test3 title is" + driver.getTitle());
     }
 
     @AfterMethod
