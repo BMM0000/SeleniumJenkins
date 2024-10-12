@@ -18,7 +18,7 @@ public class SeleniumJenkins {
     private static final Logger logger = Logger.getLogger(SeleniumJenkins.class.getName());
 
 
-    @BeforeMethod
+    @Test
     public void launchDriver(){
 
         System.setProperty("webdriver.chrome.driver","C:\\Users\\D.S.Mistry\\IdeaProjects\\SeleniumWithJenkins\\src\\main\\resources\\chromedriver.exe");
@@ -46,7 +46,7 @@ public class SeleniumJenkins {
         logger.info("Test3 title is" + driver.getTitle());
     }
 
-    @AfterMethod
+    @Test
     public void closeBrowser(){
 
         driver.quit();
