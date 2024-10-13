@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+        <suite name="SeleniumTestSuite" parallel="false">
+         <test name="SeleniumTest">
+          <classes>
+           <class name="seleniumJenkins" />
+          </classes>
+         </test><!--Test-->
+        </suite><!--Suite-->
