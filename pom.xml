@@ -15,7 +15,7 @@
                 <version>2.22.2</version>
                 <configuration>
                     <suiteXmlFiles>
-                        <suiteXmlFile>src/test/resources/testng.xml</suiteXmlFile> <!-- Path to your testng.xml -->
+                        <suiteXmlFile>SeleniumWithJenkins/testng.xml</suiteXmlFile> <!-- Path to your testng.xml -->
                     </suiteXmlFiles>
                 </configuration>
             </plugin>
